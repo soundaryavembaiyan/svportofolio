@@ -13,18 +13,32 @@ export function Projects() {
       description: 'Developed machine learning models using Python in Jupyter Notebook, including data preprocessing, feature engineering, and predictive analysis to derive meaningful insights from datasets.',
       tags: ['Python', 'Machine Learning', 'Pandas', 'NumPy', 'Jupyter Notebook'],
       image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=80',
+      code: 'https://github.com/soundaryavembaiyan/AIML',
+      demo: null, // no live demo
     },
     {
       title: 'Tracking Web Application',
       description: 'A comprehensive digital life management platform that helps users organize their daily tasks, health records, and personal documents in one secure place. Built with Angular and TypeScript, featuring real-time data synchronization and intuitive UI.',
       tags: ['Angular', 'TypeScript', 'REST API', 'CSS3'],
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
+      code: 'https://github.com/soundaryavembaiyan',
+      demo: null, // no live demo
+    },
+    {
+      title: 'Payment Integration',
+      description: 'Integrated secure online payment functionality using PayPal in an Angular application. Implemented payment flow, order handling, and transaction confirmation with seamless user experience and API integration.',
+      tags: ['Angular', 'TypeScript', 'PayPal API', 'REST API'],
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80',
+      code: 'https://github.com/soundaryavembaiyan',
+      demo: 'https://paymentelog.netlify.app', // no live demo
     },
     {
       title: 'Travel Booking Website',
       description: 'Full-featured travel booking platform with integrated car booking system, interactive map tracking, and location exploration. Includes real-time availability checking, booking management, and seamless payment integration.',
       tags: ['Angular', 'HTML5', 'API Integration', 'Maps API'],
       image: 'https://images.unsplash.com/photo-1493238792000-8113da705763?w=800&q=80',
+      code: 'https://github.com/soundaryavembaiyan',
+      demo: 'https://s2tcars.netlify.app', // no live demo
     },
   ];
 
@@ -92,22 +106,33 @@ export function Projects() {
                     </div>
 
                     {/* Links */}
+
                     <div className="flex gap-4 pt-2">
-                      <a
-                        href="https://github.com/soundaryavembaiyan" target="_blank"
-                        className="flex items-center gap-2 text-gray-300 hover:text-emerald-400 transition-colors duration-300"
-                      >
-                        <Github size={20} />
-                        <span>Code</span>
-                      </a>
-                      {/* <a
-                        href="https://s2tcars.netlify.app" target="_blank"
-                        className="flex items-center gap-2 text-gray-300 hover:text-emerald-400 transition-colors duration-300"
-                      >
-                        <ExternalLink size={20} />
-                        <span>Live Demo</span>
-                      </a> */}
+                      {project.code && (
+                        <a
+                          href={project.code}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 text-gray-300 hover:text-emerald-400 transition-colors duration-300"
+                        >
+                          <Github size={20} />
+                          <span>Code</span>
+                        </a>
+                      )}
+
+                      {project.demo && (
+                        <a
+                          href={project.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 text-gray-300 hover:text-emerald-400 transition-colors duration-300"
+                        >
+                          <ExternalLink size={20} />
+                          <span>Live Demo</span>
+                        </a>
+                      )}
                     </div>
+
                   </div>
                 </div>
               </motion.div>
