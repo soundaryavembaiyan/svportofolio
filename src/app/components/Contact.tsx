@@ -13,9 +13,9 @@ export function Contact() {
   const contactInfo = [
     {
       icon: Mail,
-      label: 'Email',
-      value: 'soundaryavembaiyan@yahoo.com',
-      link: 'mailto:soundaryavembaiyan@yahoo.com',
+      label: 'Let`s Connect',
+      value: 'http://gsheetlog.netlify.app',
+      link: 'http://gsheetlog.netlify.app',
     },
     //  {
     //   icon: Mail,
@@ -81,7 +81,15 @@ export function Contact() {
           {/* Section Title */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl mb-4 text-gray-50">Get In Touch</h2>
-            <div className="w-20 h-1 bg-emerald-500 mx-auto rounded-full"></div>
+            <div className="mb-8">
+                <p className="text-gray-400 text-lg leading-relaxed">
+                  Whether you have a question, want to discuss a project, or just want to say hi, I'll try my best to get back to you!
+                </p>
+            </div>
+
+            <div className="w-20 h-1 bg-emerald-500 mx-auto rounded-full">
+              
+            </div>
             {/* <p className="text-gray-400 mt-4 text-lg max-w-2xl mx-auto">
               I'm currently available for freelance work and open to discussing new projects. Feel free to reach out!
             </p> */}
@@ -96,12 +104,7 @@ export function Contact() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="space-y-6"
             >
-              <div className="mb-8">
-                <h3 className="text-2xl text-gray-50 mb-4">Let's Connect</h3>
-                <p className="text-gray-400 text-lg leading-relaxed">
-                  Whether you have a question, want to discuss a project, or just want to say hi, I'll try my best to get back to you!
-                </p>
-              </div>
+              
 
               {contactInfo.map((info, index) => {
                 const Icon = info.icon;
@@ -143,12 +146,12 @@ export function Contact() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="space-y-6"
             >
-               <div className="mb-8">
+               {/* <div className="mb-8">
                 <h3 className="text-2xl text-gray-50 mb-4 opacity-1">Let's Connect</h3>
                 <p className="text-gray-400 text-lg leading-relaxed opacity-1">
                   Whether you have a question, want to discuss a project, or just want to say hi, I'll try my best to get back to you!
                 </p>
-              </div>
+              </div> */}
               {contactInfo2.map((info, index) => {
                 const Icon = info.icon;
                 return (
