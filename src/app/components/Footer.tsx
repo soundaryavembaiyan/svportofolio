@@ -1,0 +1,20 @@
+import { Heart, Github, Linkedin, Mail } from 'lucide-react';
+
+export function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-gray-900/50 border-t border-gray-800 py-12 px-6">
+        {/* Copyright */}
+        <div>
+          <p className="text-gray-400 flex items-center justify-center gap-2">
+            <span className="text-emerald-400">&lt;</span>SV<span className="text-emerald-400">/&gt;</span>
+            Soundarya Vembaiyan. Made with
+            <Heart size={16} className="text-emerald-400 fill-emerald-400" />
+            and code.
+          </p>
+        </div>
+  
+    </footer>
+  );
+}
