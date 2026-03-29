@@ -14,8 +14,8 @@ export function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'soundaryavembaiyan@gmail.com',
-      link: 'mailto:soundaryavembaiyan@gmail.com',
+      value: 'soundaryavembaiyan@yahoo.com',
+      link: 'mailto:soundaryavembaiyan@yahoo.com',
     },
     //  {
     //   icon: Mail,
