@@ -7,11 +7,12 @@ export function Footer() {
     <footer className="bg-gray-900/50 border-t border-gray-800 py-12 px-6">
         {/* Copyright */}
         <div>
-          <p className="text-gray-400 flex items-center justify-center gap-2">
+          <p className="text-gray-400 flex items-center justify-center">
             <span className="text-emerald-400">&lt;</span>SV<span className="text-emerald-400">/&gt;</span>
-            Soundarya Vembaiyan. Made with
+            Soundarya Vembaiyan. 
+            {/* Made with&nbsp;
             <Heart size={16} className="text-emerald-400 fill-emerald-400" />
-            and code.
+            &nbsp;& code. */}
           </p>
         </div>
   
