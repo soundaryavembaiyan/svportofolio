@@ -49,15 +49,22 @@ export function Skills() {
 
   const tools = [
     'Angular',
+    'React',
     'TypeScript',
     'HTML5',
-    'CSS3',
+    'CSS',
+    'SCSS'
     'REST API',
     'GitHub',
     'Postman',
     'Swagger',
     'Jenkins',
     'UI/UX',
+    'Angular Material',
+    'PHP',
+    'XAMPP',
+    'Python',
+    'Jupyter Notebook'
   ];
 
   return (
