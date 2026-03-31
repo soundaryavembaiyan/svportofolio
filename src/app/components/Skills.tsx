@@ -53,7 +53,7 @@ export function Skills() {
     'TypeScript',
     'HTML5',
     'CSS',
-    'SCSS'
+    'SCSS',
     'REST API',
     'GitHub',
     'Postman',
